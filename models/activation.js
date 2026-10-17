@@ -70,6 +70,8 @@ async function sendEmailToUser(user, activationToken) {
     text: `${user.username}, clique no link abaixo para ativar seu cadastro:
   
 ${webserver.origin}/cadastro/ativar/${activationToken.id}
+
+Atenciosamente, equipe TabNews!
   `,
   });
 }
