@@ -265,7 +265,7 @@ describe("PATCH /api/v1/users/[username]", () => {
 
       const userInDatabase = await user.findOneByUsername(createdUser.username);
 
-      expect(userInDatabase.email).toBe("uniqueEmail2@curso.dev");
+      expect(userInDatabase.email).toBe("uniqueEmail2@email.com");
     });
 
     test("With new 'password'", async () => {
